@@ -5,7 +5,7 @@ public class questao_1{
         float area = 0.0f; float perimetro = 0.0f;
         area = B * H; 
         perimetro = (B * 2) + (H * 2);
-        System.out.println("A área é: " + area);
-        System.out.println("O perímetro é: " + perimetro);
+        System.out.println("A área é: " + area + " cm");
+        System.out.println("O perímetro é: " + perimetro + " cm");
     }
 }
