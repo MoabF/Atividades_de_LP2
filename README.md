@@ -1,2 +1,1 @@
-# Lista_1_de_LP2
-teste
+# Repositório que contém as listas da disciplina Linguagem de Programação 2
