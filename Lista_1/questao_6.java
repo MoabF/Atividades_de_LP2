@@ -5,7 +5,7 @@ public class questao_6{
         //pra essa questão determinei que todos meses deveriam ter 30 dias, como consequência o ano tem 360 dias
         
         int dias_digitados = 0; int anos = 0; int meses = 0; int dias = 0;
-        int resto_de_anos = 0; int resto_de_meses = 0;
+        int resto_de_anos = 0; 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite sua idade no formato de dias:");
         dias_digitados = scanner.nextInt();
