@@ -1,4 +1,4 @@
-public class record_user{
+public class class1{
 	public String record_name_1 = "";
 	public String record_name_2 = "";
 	public String record_name_3 = "";
