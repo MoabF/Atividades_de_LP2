@@ -1,28 +1,28 @@
 public classs habilidades{
-	boolean flame = false;
-	boolean yoshi = false;
-  boolean mushroom = false;
-	public states_habilidades(fogo, yosh, cogumelo){
+	public boolean flame = false;
+	public boolean yoshi = false;
+  	public boolean mushroom = false;
+	public void states_habilidades(fogo, yosh, cogumelo){
 	if(fogo == true){
 		flame = true;
-  }
-  else{
-  flame = false;  
-  }
-  if(yosh == true){
-		yoshi = true;
-  }
-  else{
-  yoshi = false;
-  }
-
-  if(cogumelo == true){
+  	}
+  	else{
+	  flame = false;  
+	  }
+	if(yosh == true){
+			yoshi = true;
+	  }
+	else{
+	  yoshi = false;
+	  }
+	
+	if(cogumelo == true){
 		mushroom = true;
-  }
-  else{
-    mushroom  = false;
-  }
-
-  }	
+	  }
+	else{
+	    mushroom  = false;
+	  }
+	
+	  }	
 }
 
