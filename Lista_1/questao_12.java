@@ -9,6 +9,6 @@ public class questao_12{
         req_paralelo = (R1 * R2)/(R1 + R2);
         req_final = req_paralelo + R3;
         System.out.println("A resistênca equivalente é: " + req_final + " ohms");
-       
+        scanner.close();
     }
 }

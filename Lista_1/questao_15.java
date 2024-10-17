@@ -12,5 +12,6 @@ public class questao_15{
         
         VOLUME = COMPRIMENTO * LARGURA * ALTURA;
         System.out.println("O volume da caixa retangular é: " + VOLUME + " M³");
+        scanner.close();
     }
 }

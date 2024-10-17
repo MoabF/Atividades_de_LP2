@@ -18,5 +18,6 @@ public class questao_10{
                 System.out.println("A nota do semestre é: "+ nota_semestre);
             }
         }
+        scanner.close();
     }
 }

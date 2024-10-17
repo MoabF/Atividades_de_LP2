@@ -14,5 +14,6 @@ public class questao_6{
         meses = resto_de_anos/30; 
         dias= resto_de_anos%30;
         System.out.println("Você tem " + anos + " anos, " + meses + " meses e " + dias + " dias");
+        scanner.close();
     }
 }

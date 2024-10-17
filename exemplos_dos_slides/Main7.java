@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main
+public class Main7
 {
     public static int soma(int a, int b){
         return a+b;
@@ -37,5 +37,6 @@ public class Main
 	           resultado = divisao(num1, num2);
 	           System.out.println("O resultado da divisão é: " + resultado);
 	           break;}
+			   scanner.close();
 	}
 }

@@ -13,6 +13,6 @@ public class questao_13{
         
         litros_gastos = distancia/12;
         System.out.println("Os litros gastos na viagem foram: " + litros_gastos + " litros");
-       
+        scanner.close();
     }
 }

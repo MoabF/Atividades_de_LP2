@@ -13,5 +13,6 @@ public class questao_14{
         System.out.println("Valores após a troca:");
         System.out.println("A = " + A);
         System.out.println("B = " + B);
+        scanner.close();
     }
 }

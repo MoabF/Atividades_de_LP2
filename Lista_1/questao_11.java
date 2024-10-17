@@ -12,5 +12,6 @@ public class questao_11{
         else{
             System.out.println("Número digitado não suportado");
         }
+        scanner.close();
     }
 }

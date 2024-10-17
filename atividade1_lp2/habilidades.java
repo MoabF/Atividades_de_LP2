@@ -1,8 +1,8 @@
-public classs habilidades{
+public class habilidades{
 	public boolean flame = false;
 	public boolean yoshi = false;
   	public boolean mushroom = false;
-	public void states_habilidades(fogo, yosh, cogumelo){
+	public void states_habilidades(boolean fogo, boolean yosh, boolean cogumelo){
 	if(fogo == true){
 		flame = true;
   	}

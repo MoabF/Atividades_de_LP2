@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Main
+public class Main4
 {
 	public static void main(String[] args) {
 	    Scanner scanner = new Scanner(System.in);
@@ -24,5 +24,6 @@ public class Main
 		for(int i = 0; i<n; i++){
 		   	System.out.print(v[i] + " ");
 		}
+		scanner.close();
 	}
 }

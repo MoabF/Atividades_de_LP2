@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main
+public class Main3
 {
 	public static void main(String[] args) {
 	    Scanner scanner = new Scanner(System.in);
@@ -14,6 +14,6 @@ public class Main
 	    else{
 	         System.out.println("Que pena, o número sorteado foi: " + valor);
 	    }
-	   
+		scanner.close();
 	}
 }

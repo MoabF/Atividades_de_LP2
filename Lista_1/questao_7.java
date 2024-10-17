@@ -9,5 +9,6 @@ public class questao_7{
         C = ((F-32) * 5)/9; 
         
         System.out.println("A temperatura em Celsius é: " + C );
+        scanner.close();
     }
 }

@@ -27,5 +27,6 @@ public class Main
 		else{
     		System.out.println("Seu IMC é: " + IMC + ", Você está com Obesidade grau III");
 		}
+		scanner.close();
 	}
 }

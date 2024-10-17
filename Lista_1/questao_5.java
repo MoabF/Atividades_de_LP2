@@ -12,5 +12,6 @@ public class questao_5{
         resto= num1%num2;
         System.out.println("O quociente é: " + quociente);
         System.out.println("O resto é: " + resto);
+        scanner.close();
     }
 }
