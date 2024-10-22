@@ -18,6 +18,12 @@ class Retangulo{
     public int getLargura(){
         return this.largura;
     }
+    public int area(){
+        return (this.largura*this.altura);
+    }
+    public int perimetro(){
+        return ((this.largura*2) + (this.altura*2));
+    }
 }
 public class questao_1_encapsulamento{
     public static void main(String[] args) {
