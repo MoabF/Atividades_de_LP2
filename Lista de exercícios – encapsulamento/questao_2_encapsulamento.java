@@ -38,6 +38,8 @@ public class questao_1_encapsulamento{
         retangulo.setLargura(larg);
         System.out.println("A altura do retângulo é: " + retangulo.getAltura() +
                             "\nA largura do retângulo é: "+ retangulo.getLargura());
+        System.out.println("A área do retângulo é: " + retangulo.area() +
+                            "\nO perímetro do retângulo é: "+ retangulo.perimetro());
         entrada.close();
     }
 }

@@ -26,6 +26,12 @@ class Triangulo_Retangulo{
     public double getHipotenusa(){
         return this.hipotenusa;
     }
+     public int area(){
+        return (this.catetolargura*this.catetoaltura);
+    }
+    public double perimetro(){
+        return ((this.catetolargura + this.catetoaltura) + this.hipotenusa);
+    }
 }
 public class questao_4_encapsulamento{
     public static void main(String[] args) {
@@ -42,6 +48,8 @@ public class questao_4_encapsulamento{
                             "\nO cateto largura do triângulo retângulo é: "+ trianguloretangulo.getCatetoLargura());
         trianguloretangulo.setHipotenusa();
         System.out.println("A hipotenusa do triângulo retângulo é: " + trianguloretangulo.getHipotenusa());
+        System.out.println("A área do triângulo retângulo é: " + trianguloretangulo.area() +
+                            "\nO perímetro do triângulo retângulo é: "+ trianguloretangulo.perimetro());
         entrada.close();
     }
 }
