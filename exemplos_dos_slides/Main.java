@@ -1,32 +1,36 @@
-import java.util.Scanner;
-public class Main
-{
-	public static void main(String[] args) {
-	    Scanner scanner = new Scanner(System.in);
-	    float peso = 0.0f; float altura = 0.0f; double IMC = 0.0d;
-		System.out.println("Digite seu peso:");
-		peso = scanner.nextFloat();
-		System.out.println("Digite sua altura:");
-		altura = scanner.nextFloat();
-		IMC = peso / (altura * altura);
-		if(IMC < 18.5){
-    		System.out.println("Seu IMC é: " + IMC + ", Você está com Baixo peso");
-		}
-		else if(IMC >= 18.6 && IMC <= 24.9){
-    		System.out.println("Seu IMC é: " + IMC + ", Você está com o Peso normal");
-		}
-		else if(IMC >= 25 && IMC <= 29.9){
-    		System.out.println("Seu IMC é: " + IMC + ", Você está com Sobrepeso");
-		}
-		else if(IMC >= 30 && IMC <= 34.9){
-    		System.out.println("Seu IMC é: " + IMC + ", Você está com Obesidade grau I");
-		}
-		else if(IMC >= 35 && IMC <= 39.9){
-    		System.out.println("Seu IMC é: " + IMC + ", Você está com Obesidade grau II");
-		}
-		else{
-    		System.out.println("Seu IMC é: " + IMC + ", Você está com Obesidade grau III");
-		}
-		scanner.close();
+public class Main {
+
+	public static void obterMemoriaUsada(){
+		int MB = 1024*1024;
+		Runtime runtime = Runtime.getRuntime();
+		//runtime.totalMemory() - runtime.freeMemory();
+		System.out.println((runtime.totalMemory() - runtime.freeMemory())/MB+"MB");
 	}
+	public static void main (String[] args){
+		Contato[] contatos = new Contato[10000];
+		//Contato contato
+		for (int i=0; i< contatos.length; i++){
+		Contato contato = new Contato("Contato"+i,"1234-5678"+i, "contato"+i+"@email.com");
+		contatos[i] = contato;
+		}
+		System.out.println("Contatos criados");
+		obterMemoriaUsada();
+		contatos = null;
+		Runtime.getRuntime().runFinalization();
+		Runtime.getRuntime().gc();
+		
+		System.out.println("Contatos removidos da memória");
+		obterMemoriaUsada();
+	}
+}
+class Contato{
+    private String nome;
+    private String numero;
+    private String email;
+    
+    public Contato(String nome, String numero, String email){
+        this.nome = nome;
+        this.numero = numero;
+        this.email = email;
+    }
 }
