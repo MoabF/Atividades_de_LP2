@@ -6,31 +6,26 @@ public class Main {
 		//runtime.totalMemory() - runtime.freeMemory();
 		System.out.println((runtime.totalMemory() - runtime.freeMemory())/MB+"MB");
 	}
-	public static void main (String[] args){
-		Contato[] contatos = new Contato[10000];
-		//Contato contato
-		for (int i=0; i< contatos.length; i++){
-		Contato contato = new Contato("Contato"+i,"1234-5678"+i, "contato"+i+"@email.com");
-		contatos[i] = contato;
+	public static void main (String[] args ){
+		Agenda[] terefas = new Agenda[10000];
+		//Agenda Agenda
+		for (int i=0; i< terefas.length; i++){
+		Agenda terefa = new Agenda("terefa"+i);
+		terefas[i] = terefa;
 		}
-		System.out.println("Contatos criados");
+		System.out.println("terefas criados");
 		obterMemoriaUsada();
-		contatos = null;
+		terefas = null;
 		Runtime.getRuntime().runFinalization();
 		Runtime.getRuntime().gc();
 		
-		System.out.println("Contatos removidos da memória");
+		System.out.println("terefas removidos da memória");
 		obterMemoriaUsada();
 	}
 }
-class Contato{
-    private String nome;
-    private String numero;
-    private String email;
-    
-    public Contato(String nome, String numero, String email){
-        this.nome = nome;
-        this.numero = numero;
-        this.email = email;
+class Agenda{
+    private String tarefa;
+    public Agenda(String tar){
+        this.tarefa = tar;
     }
 }

@@ -1,3 +1,5 @@
+package atividade2_lp2;
+
 import java.util.Scanner;
 class Carro{
     private boolean dispovivel;
@@ -50,7 +52,7 @@ class Reserva{
     }
 }
 
-public class Main
+public class questao_2_atv2
 {
 	public static void main(String[] args) {
 	    Scanner entrada = Scanner(System.in);
