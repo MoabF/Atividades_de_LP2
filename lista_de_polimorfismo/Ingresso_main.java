@@ -1,4 +1,3 @@
-import java.util.Scanner;
 class Ingresso{
     private int preco;
     
@@ -55,7 +54,7 @@ class CamaroteInferior extends VIP{
      public String getEndereco() {
         return this.endereco;
     }
-    public void setEndereco(String localizacao) {
+    public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
     public void imprimeEndereco() {

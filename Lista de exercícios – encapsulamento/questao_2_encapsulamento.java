@@ -25,7 +25,7 @@ class Retangulo{
         return ((this.largura*2) + (this.altura*2));
     }
 }
-public class questao_1_encapsulamento{
+public class questao_2_encapsulamento{
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int alt = 0; int larg = 0;

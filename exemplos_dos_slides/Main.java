@@ -25,6 +25,9 @@ public class Main {
 }
 class Agenda{
     private String tarefa;
+	public Agenda(){
+        this.tarefa = "";
+    }
     public Agenda(String tar){
         this.tarefa = tar;
     }

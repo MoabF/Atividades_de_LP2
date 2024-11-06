@@ -33,7 +33,7 @@ class Triangulo_Retangulo{
         return ((this.catetolargura + this.catetoaltura) + this.hipotenusa);
     }
 }
-public class questao_4_encapsulamento{
+public class questao_5_encapsulamento{
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int alt = 0; int larg = 0;
