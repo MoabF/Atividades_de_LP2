@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class Pagamentos_Main {
     public static void main(String[] args) {
         int n = 0;
         Scanner entrada = new Scanner(System.in);
