@@ -1,4 +1,6 @@
+package Pagamentos;
 import java.util.Scanner;
+
 public class Pagamentos_Main {
     public static void main(String[] args) {
         int n = 0;
@@ -8,7 +10,7 @@ public class Pagamentos_Main {
         n = entrada.nextInt();
         switch (n){
             case 1:
-                CartãoCrédito pagamento = new CartãoCrédito();
+                CartaoCredito pagamento = new CartaoCredito();
                 pagamento.autenticar();
                 pagamento.realizarPagamento();
                 break;
@@ -27,6 +29,6 @@ public class Pagamentos_Main {
                 break;
         }
 
-
+        entrada.close();
     }
 }
