@@ -1,5 +1,5 @@
 package Funcionarios;
-public class Pagamento_Funcionarios_Main {
+public class Funcionarios_Main {
     public static void main(String[] args) {
         FuncionarioHorista horista = new FuncionarioHorista(160); 
         FuncionarioNormal assalariado = new FuncionarioNormal(); 
