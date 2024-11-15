@@ -12,7 +12,7 @@ public class FuncionarioHorista extends Funcionario implements Bonus{
         return this.horasTrabalhadas * this.valorPorHora;
     }
     @Override
-    public double calcularBonus(float bonus){
+    public double calcularBonus(double bonus){
         return this.calcularPagamento() * bonus;
     }
 }

@@ -8,7 +8,7 @@ public class FuncionarioNormal extends Funcionario implements Bonus{
         return this.getPagamento();
     }
     @Override
-    public double calcularBonus(float bonus){
+    public double calcularBonus(double bonus){
         return this.calcularPagamento() * bonus;
     }
 }

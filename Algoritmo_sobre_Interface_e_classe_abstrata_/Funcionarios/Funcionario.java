@@ -11,5 +11,5 @@ public abstract class Funcionario {
     public abstract double calcularPagamento();
 }
 interface Bonus{
-    double calcularBonus(float bonus);
+    double calcularBonus(double bonus);
 }
