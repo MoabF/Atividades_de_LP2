@@ -23,7 +23,7 @@ public class Listadepresenca_Main
 		presenca.put (104, false);
 		presenca.put (122, false);
 		
-	/*	for(Map.Entry <Integer, String> entry: lista.entrySet()){
+		for(Map.Entry <Integer, String> entry: lista.entrySet()){
 		    System.out.println("ID: "+ entry.getKey()+ " - Nome: "+ entry.getValue());
 		}
 		
@@ -41,7 +41,7 @@ public class Listadepresenca_Main
 		  n = sc.nextInt();
 		  switch(n){
 		      case 1:
-		          System.out.println("Digite o id para consulta: ");
+		          System.out.println("Digite o id para atualizar: ");
 		            int id = sc.nextInt();
 		            String nome = lista.get(id);
 		            	if (nome != null){

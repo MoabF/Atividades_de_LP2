@@ -1,6 +1,3 @@
-import java.util.*;
-import java.util.stream.Collectors;
-
 // Classe Pessoa
 class Pessoa {
     private String nome;
@@ -51,16 +48,16 @@ public class Loja {
     public static void main(String[] args) {
         // Lista de pessoas
         Pessoa[] pessoas = new Pessoa[5];
-        pessoa[0] = new Pessoa("Alice", 25, 3000.0),
-        pessoa[1] = new Pessoa("Bruno", 30, 4000.0),
-        pessoa[2] = new Pessoa("Carla", 20, 2500.0),
-            new Pessoa("Daniel", 35, 5000.0)
+        pessoas[0] = new Pessoa("Alice", 55, 3500.0);
+        pessoas[1] = new Pessoa("Bruno", 34, 4250.0);
+        pessoas[2] = new Pessoa("Carla", 27, 2550.0);
+        pessoas[3] = new Pessoa("Daniel", 75, 5700.0);
+        pessoas[4] = new Pessoa("Paula", 20, 1500.0);
         
         
         Desconto desconto = pessoa -> pessoa.getSalario() > 3000 ? pessoa.getSalario() * 0.9 : pessoa.getSalario();
-        pessoas.forEach(pessoa -> pessoa.setSalario(desconto.aplicar(pessoa)));
+       // pessoas.forEach(pessoa -> pessoa.setSalario(desconto.aplicar(pessoa)));
 
         System.out.println("\nPessoas após aplicação de desconto:");
-        pessoas.forEach(System.out::println);
     }
 }
