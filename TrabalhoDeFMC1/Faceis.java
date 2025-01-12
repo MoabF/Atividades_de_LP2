@@ -43,17 +43,17 @@ public class Faceis {
             num1 = num2;
             num2 = aux;
         }
-        int crivo_de_eratostenes = (int)Math.sqrt(num1);
-        if (crivo_de_eratostenes>num2) {
 
             for(int i= num2; i <= num1; i++){
                 for(int j= 2; j <= (int)Math.sqrt(i); j++){
-                    if (i>2) {
+                //Proposição 2.1. Se n é um número composto, 
+                //então n tem um divisor primo p <= \sqrt(n). (Crivo de Eratóstenes)
+                    if (i>=2) {
                     if(i%j==0){
                         contador++;
                     }}
                 }
-                if (contador == 0) {
+                if ((i>=2)&&(contador == 0)) {
                     System.out.printf("%d ", i);
                     contador_de_primos++;
                 }
@@ -65,7 +65,7 @@ public class Faceis {
             if (contador_de_primos==0) {
                 System.out.println("Não existem primos presentes nesse intervalo");
             }
-        }
+       // }
     }
     public static void main(String[] args) {
         int menu, num1, num2; double num3;
@@ -104,11 +104,11 @@ public class Faceis {
                 num1 = scanner.nextInt();
                 System.out.println("Digite o segundo número:");
                 num2 = scanner.nextInt();
-                System.out.println("Os pprimos que estão presentes nesse intervalo são: ");
+                System.out.println("Os primos que estão presentes nesse intervalo são: ");
                 primos(num1, num2);
                 break;
             default:
-                System.out.println("Dígito válido");
+                System.out.println("Dígito inválido");
                 break;
         }
         scanner.close();   
